@@ -142,6 +142,7 @@ body {
   border: 2px solid #2C2C2C;
   border-radius: 50%;
   transition: color,background-color 0.7s;
+  margin: 5px;
 }
 
 .fa-facebook-square {
@@ -156,6 +157,10 @@ body {
   color: #FD1D1D;
 }
 
+.fa-google {
+  color: #B23121;
+}
+
 .fa-github:hover {
   color: #1C1C1C;
   background-color: #FFFFFF;
@@ -164,6 +169,11 @@ body {
 .fa-linkedin-square:hover {
   color: #1C1C1C;
   background-color: #2867B2;
+}
+
+.fa-google:hover {
+  color: #FFFFFF;
+  background-color: #B23121;
 }
 
 .fa-instagram:hover {
@@ -243,7 +253,7 @@ body {
   margin-left: 25%;
   margin-right: 25%;
   border-radius: 50%;
-  border: 3px solid #6A0DAD;
+  border: 3px solid #00FFFF;
 }
 
 .card-description {
