@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="./js/jQuery.js"></script>
+    <script type="text/javascript" src="./js/actions.js"></script>
+  </head>
+  <body>
+    <section id="contact">
+      <i class="fa fa-times" onclick="hideContact();"></i>
+      <div class="container">
+        <div class="row pad-top-1">
+          <div class="col col-4"></div>
+          <div class="col col-4">
+            <form class="form" action="/contact" method="post">
+              <div class="row">
+                <div class="col col-11 offset-1">
+                  <h4><b>CONTACT FORM</b></h4>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col col-12">
+                  <label class="form-label"><b>Email ID</b></label>
+                  <input class="form-input" type="text" name="email" placeholder="Your Email ID" required>
+                </div>
+                <div class="col col-12">
+                  <label class="form-label"><b>Message</b></label>
+                  <textarea class="form-textarea" name="message" placeholder="Your Message" required></textarea>
+                </div>
+                <div class="col col-6 offset-1">
+                  <input class="form-submit" type="submit">
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col col-4"></div>
+        </div>
+      </div>
+    </section>
+    <section id="home">
+      <div class="container">
+        <div class="row pad-top-1">
+          <div class="col col-4"></div>
+          <div class="col col-4">
+            <div class="card">
+              <div class="container">
+                <div class="row">
+                  <i class="fa fa-bars menu-icon" onclick="showMenu();"></i>
+                </div>
+                <div class="row">
+                  <div class="col col-6">
+                    <div id="menu">
+                      <ul>
+                        <a href="/details?tab=experiences" class="menu-content"><li><b>Experiences</b></li></a>
+                        <a href="/details?tab=projects" class="menu-content"><li><b>Projects</b></li></a>
+                        <a class="menu-content" onclick="hideMenu();"><li><b>Exit</b></li></a>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <i class="fa fa-angle-double-down fa-lg drop-icon" onclick="showSocials();"></i>
+                </div>
+                <div class="row">
+                  <div class="col col-6">
+                    <div id="socials">
+                      <ul>
+                        <a href="#"><li><i class="fa fa-github social-icon"></i></li></a>
+                        <a href="#"><li><i class="fa fa-linkedin-square social-icon"></i></li></a>
+                        <a href="#"><li><b><i class="fa fa-instagram social-icon"></i></b></li></a>
+                        <a href="#"><li><i class="fa fa-facebook-square social-icon"></i></li></a>
+                        <a href="#"><li><i class="fa fa-angle-double-up fa-lg social-icon" onclick="hideSocials();"></i></li></a>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col col-12">
+                    <div class="img-cont profile"></div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col col-8 offset-2 center">
+                    <h3>Tanay Ghirnikar</h3>
+                    <p class="card-description">Tech Junkie and a Gamer</p>
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col col-10 card-mini-header">
+                    LANGUAGES
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col col-11 offset-1">
+                    <p class="attribute">Python</p>
+                    <p class="attribute">JavaScript</p>
+                    <p class="attribute">Java</p>
+                    <p class="attribute">C++</p>
+                    <p class="attribute">C</p>
+                    <p class="attribute">MongoDB</p>
+                    <p class="attribute">SQL</p>
+                    <p class="attribute">HTML5/CSS/SASS</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col col-10 card-mini-header">
+                    FRAMEWORKS
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col col-11 offset-1">
+                    <p class="attribute">React</p>
+                    <p class="attribute">Node</p>
+                    <p class="attribute">Express</p>
+                    <p class="attribute">Django</p>
+                    <p class="attribute">Flask</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col col-12">
+                    <button type="button" class="button" onclick="showContact();"><h5>Message</h5></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col col-4"></div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

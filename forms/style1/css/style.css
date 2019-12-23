@@ -1,0 +1,65 @@
+.form {
+  width: 100%;
+  background-color: #1C1C1C;
+}
+
+.form-input {
+  padding: 2.5%;
+  width: 95%;
+  margin: auto;
+  outline: 0;
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: #2C2C2C;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-family: 'arial', sans-serif;
+  transition: ease-in-out, border 0.3s ease-in-out;
+}
+
+.form-input:focus {
+  border-top: 1px solid rgba(106, 14, 174, 1);
+  border-bottom: 1px solid rgba(106, 14, 174, 1);
+}
+
+.form-submit {
+  padding-top: 4%;
+  padding-bottom: 4%;
+  margin: 2.5%;
+  width: 95%;
+  outline: 0;
+  border-radius: 30px;
+  border: 2px solid #6A0DAD;
+  background-color: #2C2C2C;
+  color: #6A0DAD;
+  font-weight: bold;
+  font-family: 'arial', sans-serif;
+  transition: ease-in-out, background-color,color 0.3s ease-in-out;
+}
+
+.form-submit:hover {
+  background-color: #6A0DAD;
+  color: white;
+}
+
+.form .col {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.form a {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.8rem;
+  font-weight: bold;
+  transition: ease-in-out, color 0.3s ease-in-out;
+}
+
+.form a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.forgot {
+  position: relative;
+  top: -15px;
+}

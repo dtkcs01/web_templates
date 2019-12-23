@@ -1,0 +1,288 @@
+body {
+  background-image: linear-gradient(to left bottom, #BB32FF, #430064);
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+#contact {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  font-family: 'Roboto', sans-serif;
+  display: none;
+}
+
+#contact .fa {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #FFFFFF;
+}
+
+#contact .fa:hover {
+  cursor: pointer;
+}
+
+.form {
+  width: 100%;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  color: #DC143C;
+  overflow-x: hidden;
+}
+
+.form-label {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 1.4em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.form-input {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 10px;
+  font-size: 1.25em;
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid #000000;
+  transition: border-bottom 0.2s;
+}
+
+.form-input:focus {
+  border-bottom: 2px solid #DE3163;
+}
+
+.form-textarea {
+  width: 80%;
+  margin-top: 10px;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 10px;
+  font-size: 1.25em;
+  height: 200px;
+  outline: 0;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  resize: none;
+  transition: border 0.2s;
+}
+
+.form-textarea:focus {
+  border: 2px solid #DE3163;
+}
+
+.form-submit {
+  width: 100%;
+  background-color: #DE3163;
+  border-radius: 5px;
+  font-size: 1.25em;
+  border: 0;
+  padding: 10px;
+  color: #FFFFFF;
+}
+
+.form-submit:hover {
+  background-color: #DD1C24;
+}
+
+.card {
+  position: relative;
+  background-color: #1C1C1C;
+  padding-top: 5vh;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: #FFFFFF;
+}
+
+.drop-icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 10px;
+  border-radius: 50%;
+  border: 2px solid #2C2C2C;
+  font-weight: bold;
+  color: #7C7C7C;
+}
+
+.drop-icon:hover {
+  cursor: pointer;
+  color: #FFFFFF;
+}
+
+#socials {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: auto;
+  display: none;
+}
+
+#socials ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#socials ul li {
+  color: white
+}
+
+.social-icon {
+  padding: 10px;
+  border: 2px solid #2C2C2C;
+  border-radius: 50%;
+  transition: color,background-color 0.7s;
+}
+
+.fa-facebook-square {
+  color: #3B5998;
+}
+
+.fa-linkedin-square {
+  color: #2867B2;
+}
+
+.fa-instagram {
+  color: #FD1D1D;
+}
+
+.fa-github:hover {
+  color: #1C1C1C;
+  background-color: #FFFFFF;
+}
+
+.fa-linkedin-square:hover {
+  color: #1C1C1C;
+  background-color: #2867B2;
+}
+
+.fa-instagram:hover {
+  color: #FFFFFF;
+  background-color: #FD1D1D;
+}
+
+.fa-facebook-square:hover {
+  color: #FFFFFF;
+  background-color: #3B5998;
+}
+
+.fa-angle-double-up {
+  color: #7C7C7C;
+}
+
+.fa-angle-double-up:hover {
+  color: #FFFFFF;
+}
+
+.menu-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  border-radius: 50%;
+  border: 2px solid #2C2C2C;
+  color: #7C7C7C;
+}
+
+.menu-icon:hover {
+  cursor: pointer;
+  color: #FFFFFF;
+}
+
+#menu {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: inherit;
+  display: none;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  overflow-y: visible;
+  z-index: 20;
+}
+
+#menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#menu ul li {
+  padding: 10px;
+  padding-left: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-transition: color 1s;
+  transition: color 1s;
+}
+
+#menu ul li:hover {
+  background-color: #2C2C2C;
+  color: #FFFFFF;
+}
+
+.menu-content {
+  text-decoration: none;
+  color: #2C2C2C;
+}
+
+.img-cont {
+  width: 50%;
+  padding-top: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  border-radius: 50%;
+  border: 3px solid #6A0DAD;
+}
+
+.card-description {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: bold;
+}
+
+.profile {
+  background-image: url(../img/boi.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.button {
+  background-color: #00CCCC;
+  border: 0;
+  color: #2C2C2C;
+  width: 100%;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #00FFFF;
+}
+
+.card-mini-header {
+  font-size: 0.8em;
+  padding: 5px;
+  margin: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.attribute {
+  padding: 10px;
+  display: inline-block;
+  border: 2px solid #2C2C2C;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: bold;
+}
