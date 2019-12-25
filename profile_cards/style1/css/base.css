@@ -75,6 +75,15 @@ hr {
   align-content: center;
 }
 
+.card {
+  position: relative;
+  background-color: #1C1C1C;
+  padding-top: 5vh;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: #FFFFFF;
+}
+
 .container {
   width: 100%;
   box-sizing: border-box;
