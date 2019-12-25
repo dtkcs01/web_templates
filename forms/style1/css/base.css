@@ -3,6 +3,7 @@ html {
   margin: 0;
   overflow-x: hidden;
   box-sizing: border-box;
+  z-index: -1;
 }
 body,section,div,p,pre,aside {
   padding: 0;
@@ -10,12 +11,42 @@ body,section,div,p,pre,aside {
   width: auto;
   overflow-x: hidden;
   box-sizing: border-box;
+  z-index: 0;
 }
 
 h1,h2,h3,h4,h5,h6 {
   margin: auto;
   margin-top: 10px;
   margin-bottom: 10px;
+  font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+  font-size: 2.25em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.75em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+h5 {
+  font-size: 1.25em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+p {
+  font-size: 0.75em;
 }
 
 footer {
@@ -33,12 +64,43 @@ header {
   margin-bottom: 1vh;
 }
 
+hr {
+  height: 0;
+  border: 1px solid #2C2C2C;
+}
+
+.center {
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+
+.card {
+  position: relative;
+  background-color: #1C1C1C;
+  padding-top: 5vh;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: #FFFFFF;
+}
+
+.fa {
+  padding: 7px;
+  border: 2px solid #2C2C2C;
+  border-radius: 50%;
+}
+
+.fa:hover  {
+  cursor: pointer;
+}
+
 .container {
   width: 100%;
   box-sizing: border-box;
   display: block;
   padding-top: 1vh;
   padding-bottom: 1vh;
+  z-index: 0;
 }
 
 .row {
@@ -46,15 +108,14 @@ header {
   height: auto;
   box-sizing: border-box;
   display: block;
+  z-index: 0;
 }
 
 .col {
   box-sizing: border-box;
   display: inline-block;
   height: inherit;
-  text-align: center;
-  align-items: center;
-  align-content: center;
+  z-index: 0;
 }
 
 .col-1 {
@@ -247,4 +308,237 @@ header {
 
 .pad-bottom-12 {
 	padding-bottom: 100.0vh;
+}
+
+@media (max-width:1200px) {
+	.col-1 {
+		width: 70%;
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+
+	.col-2 {
+		width: 70%;
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+
+	.col-3 {
+		width: 70%;
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+
+	.col-4 {
+		width: 70%;
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+
+	.col-5 {
+		width: 70%;
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+
+	.col-6 {
+		width: 70%;
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+
+	.col-7 {
+		width: 70%;
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+
+	.col-8 {
+		width: 70%;
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+
+	.col-9 {
+    width: 94%;
+		margin-left: 3%;
+		margin-right: 3%;
+	}
+
+	.col-10 {
+    width: 94%;
+		margin-left: 3%;
+		margin-right: 3%;
+	}
+
+	.col-11 {
+    width: 94%;
+		margin-left: 3%;
+		margin-right: 3%;
+	}
+
+}
+
+@media (max-width:600px) {
+	.col-1 {
+		width: 94%;
+		margin-left: 3%;
+		margin-right: 3%;
+	}
+
+	.col-2 {
+		width: 94%;
+		margin-left: 3%;
+		margin-right: 3%;
+	}
+
+	.col-3 {
+		width: 94%;
+		margin-left: 3%;
+		margin-right: 3%;
+	}
+
+	.col-4 {
+		width: 94%;
+		margin-left: 3%;
+		margin-right: 3%;
+	}
+
+	.col-5 {
+		width: 94%;
+		margin-left: 3%;
+		margin-right: 3%;
+	}
+
+	.col-6 {
+		width: 94%;
+		margin-left: 3%;
+		margin-right: 3%;
+	}
+
+	.col-7 {
+		width: 94%;
+		margin-left: 3%;
+		margin-right: 3%;
+	}
+
+	.col-8 {
+		width: 94%;
+		margin-left: 3%;
+		margin-right: 3%;
+	}
+
+	.col-9 {
+		width: 94%;
+		margin-left: 3%;
+		margin-right: 3%;
+	}
+
+	.col-10 {
+		width: 94%;
+		margin-left: 3%;
+		margin-right: 3%;
+	}
+
+	.col-11 {
+		width: 94%;
+		margin-left: 3%;
+		margin-right: 3%;
+	}
+
+  .pad-top-1 {
+		padding-top: 5vh;
+	}
+
+	.pad-top-2 {
+		padding-top: 5vh;
+	}
+
+	.pad-top-3 {
+		padding-top: 5vh;
+	}
+
+	.pad-top-4 {
+		padding-top: 5vh;
+	}
+
+	.pad-top-5 {
+		padding-top: 5vh;
+	}
+
+	.pad-top-6 {
+		padding-top: 5vh;
+	}
+
+	.pad-top-7 {
+		padding-top: 5vh;
+	}
+
+	.pad-top-8 {
+		padding-top: 5vh;
+	}
+
+	.pad-top-9 {
+		padding-top: 5vh;
+	}
+
+	.pad-top-10 {
+		padding-top: 5vh;
+	}
+
+	.pad-top-11 {
+		padding-top: 5vh;
+	}
+
+	.pad-top-12 {
+		padding-top: 5vh;
+	}
+
+  .pad-bottom-1 {
+		padding-bottom: 5vh;
+	}
+
+	.pad-bottom-2 {
+		padding-bottom: 5vh;
+	}
+
+	.pad-bottom-3 {
+		padding-bottom: 5vh;
+	}
+
+	.pad-bottom-4 {
+		padding-bottom: 5vh;
+	}
+
+	.pad-bottom-5 {
+		padding-bottom: 5vh;
+	}
+
+	.pad-bottom-6 {
+		padding-bottom: 5vh;
+	}
+
+	.pad-bottom-7 {
+		padding-bottom: 5vh;
+	}
+
+	.pad-bottom-8 {
+		padding-bottom: 5vh;
+	}
+
+	.pad-bottom-9 {
+		padding-bottom: 5vh;
+	}
+
+	.pad-bottom-10 {
+		padding-bottom: 5vh;
+	}
+
+	.pad-bottom-11 {
+		padding-bottom: 5vh;
+	}
+
+	.pad-bottom-12 {
+		padding-bottom: 5vh;
+	}
 }

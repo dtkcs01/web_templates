@@ -6,47 +6,60 @@
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="./js/jQuery.js"></script>
+    <script type="text/javascript" src="./js/actions.js"></script>
   </head>
   <body>
     <div class="container">
-      <div class="row">
+      <div class="row pad-top-1">
         <div class="col col-4"></div>
         <div class="col col-4">
           <div class="container">
             <div class="row">
-              <div class="col col-12">
-                <form class="form pad-top-1 pad-bottom-1" action="index.html" method="post">
-                  <div class="container">
-                    <div class="row">
-                      <div class="col col-12">
-                        <h3>LOGIN TO YOUR ACCOUNT</h3>
+              <form class="card pad-top-1 pad-bottom-1" action="index.html" method="post">
+                <div class="container">
+                  <div class="row">
+                    <a href="/"><i class="fa fa-home"></i></a>
+                  </div>
+                  <div class="row">
+                    <i class="fa fa-bars" onclick="showMenu();"></i>
+                    <div class="col col-6">
+                      <div id="menu">
+                        <ul>
+                          <a href="/register" class="menu-content"><li><b>Register</b></li></a>
+                          <a href="/details?tab=projects" class="menu-content"><li><b>Utility List</b></li></a>
+                          <a class="menu-content" onclick="hideMenu();"><li><b>Exit</b></li></a>
+                        </ul>
                       </div>
                     </div>
                   </div>
-                  <div class="container">
-                    <div class="row">
-                      <div class="col col-12">
-                        <input class="form-input" type="text" placeholder="Enter username">
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col col-12">
-                        <input class="form-input" type="password" placeholder="Enter password">
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col col-6 offset-1">
-                        <input class="form-submit" type="submit" value="Log-In">
-                      </div>
-                      <div class="col col-4 forgot">
-                        <a href="#">Forgotten credentials?</a>
-                      </div>
+                  <div class="row">
+                    <div class="col col-11 offset-1">
+                      <h4>LOGIN TO YOUR ACCOUNT</h4>
                     </div>
                   </div>
-                </form>
-              </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col col-12">
+                      <input class="form-input" type="text" name="username" placeholder="Enter Username">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col col-12">
+                      <input class="form-input" type="password" name="password" placeholder="Enter Password">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col col-12">
+                      <input class="form-submit" type="submit" value="LogIn">
+                    </div>
+                  </div>
+                </div>
+              </form>
             </div>
+          </div>
           </div>
         </div>
         <div class="col col-4"></div>
