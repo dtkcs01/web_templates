@@ -1,0 +1,236 @@
+.loader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  text-align: center;
+  background-color: #1C1C1C;
+}
+
+.preloader {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  margin-top: 37.5vh;
+  margin-bottom: 20vh;
+  overflow: visible;
+}
+
+.preloader::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 100px;
+  background-color: #4C4C4C;
+  height: 1px;
+}
+
+.preloader::after {
+  content: "";
+  position: absolute;
+  top: 120px;
+  left: 0;
+  width: 100px;
+  background-color: #4C4C4C;
+  height: 1px;
+}
+
+.ball {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 0, 0, 1);
+}
+
+.l {
+  left: 0;
+  animation: LtoR 1s infinite;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+.r {
+  right: 0;
+  animation: RtoL 1s infinite;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+.rod {
+  position: absolute;
+  height: 2px;
+  background-color: rgba(255, 0, 0, 1);
+  animation: rod 1s infinite;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+.rod-0 {
+  top: 5px;
+  left: 5px;
+  width: 85px;
+}
+
+.row-0 {
+  top: 0;
+}
+
+.row-1 {
+	top: 10px;
+	animation-delay: 0.1s;
+}
+
+.row-2 {
+	top: 20px;
+	animation-delay: 0.2s;
+}
+
+.row-3 {
+	top: 30px;
+	animation-delay: 0.3s;
+}
+
+.row-4 {
+	top: 40px;
+	animation-delay: 0.4s;
+}
+
+.row-5 {
+	top: 50px;
+	animation-delay: 0.5s;
+}
+
+.row-6 {
+	top: 60px;
+	animation-delay: 0.6s;
+}
+
+.row-7 {
+	top: 70px;
+	animation-delay: 0.7s;
+}
+
+.row-8 {
+	top: 80px;
+	animation-delay: 0.8s;
+}
+
+.row-9 {
+	top: 90px;
+	animation-delay: 0.9s;
+}
+
+.row-10 {
+	top: 100px;
+	animation-delay: 1.0s;
+}
+
+.rod-1 {
+	top: 15px;
+	animation-delay: 0.1s;
+}
+
+.rod-2 {
+	top: 25px;
+	animation-delay: 0.2s;
+}
+
+.rod-3 {
+	top: 35px;
+	animation-delay: 0.3s;
+}
+
+.rod-4 {
+	top: 45px;
+	animation-delay: 0.4s;
+}
+
+.rod-5 {
+	top: 55px;
+	animation-delay: 0.5s;
+}
+
+.rod-6 {
+	top: 65px;
+	animation-delay: 0.6s;
+}
+
+.rod-7 {
+	top: 75px;
+	animation-delay: 0.7s;
+}
+
+.rod-8 {
+	top: 85px;
+	animation-delay: 0.8s;
+}
+
+.rod-9 {
+	top: 95px;
+	animation-delay: 0.9s;
+}
+
+.rod-10 {
+	top: 105px;
+	animation-delay: 1.0s;
+}
+
+@keyframes LtoR {
+  0% {
+    left: 0;
+    background-color: rgba(255, 0, 0, 1);
+  }
+  50% {
+    left: 90px;
+    background-color: rgba(106, 13, 173, 1);
+  }
+  100% {
+    left: 0;
+    background-color: rgba(255, 0, 0, 1);
+  }
+}
+
+@keyframes RtoL {
+  0% {
+    right: 0;
+    background-color: rgba(255, 0, 0, 1);
+  }
+  50% {
+    right: 90px;
+    background-color: rgba(106, 13, 173, 1);
+  }
+  100% {
+    right: 0;
+    background-color: rgba(255, 0, 0, 1);
+  }
+}
+
+@keyframes rod {
+  0% {
+    left: 5px;
+    width: 85px;
+    background-color: rgba(255, 0, 0, 1);
+  }
+  25% {
+    left: 50px;
+    width: 0;
+  }
+  50% {
+    left: 5px;
+    width: 85px;
+    background-color: rgba(106, 13, 173, 1);
+  }
+  75% {
+    left: 50px;
+    width: 0;
+  }
+  100% {
+    left: 5px;
+    width: 85px;
+    background-color: rgba(255, 0, 0, 1);
+  }
+}
