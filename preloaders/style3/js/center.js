@@ -33,7 +33,7 @@ function createCenter() {
     ctx.beginPath();
     ctx.fillStyle = '#1C1C1C';
     ctx.filter = `blur(${constants.center.radius/4}px)`;
-    ctx.globalAlpha = 0.7;
+    ctx.globalAlpha = 0.5;
     ctx.arc(x + constants.center.radius/3, y + constants.center.radius/3, constants.center.radius/2, 0, 2*Math.PI, true);
     ctx.fill();
     ctx.closePath();
@@ -48,7 +48,7 @@ function createCenter() {
     ctx.save();
     ctx.beginPath();
     ctx.fillStyle = grd;
-    ctx.globalAlpha = 0.5;
+    ctx.globalAlpha = 0.7;
     ctx.arc(x, y, radius, 0, 2*Math.PI, true);
     ctx.fill();
     ctx.closePath();
@@ -59,7 +59,7 @@ function createCenter() {
     ctx.save();
     ctx.beginPath();
     ctx.fillStyle = constants.center.fillStyle;
-    ctx.globalAlpha = 0.3;
+    ctx.globalAlpha = 0.7;
     ctx.arc(x, y, radius-10, 0, 2*Math.PI, true);
     ctx.fill();
     ctx.closePath();
