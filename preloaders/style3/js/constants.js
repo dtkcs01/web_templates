@@ -11,7 +11,7 @@ function getConstants(){
     center: {
       radius: 80,
       delta: 5,
-      fillStyle: '#FF4500'
+      fillStyle: '#DC00DC'
     }
   };
   return constants;
