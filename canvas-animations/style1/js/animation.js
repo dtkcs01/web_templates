@@ -28,7 +28,7 @@ function initialize() {
       'incrementFactor': 25,
       'connectionFadeFactor': 1.5,
       'particleRange': [50, 150],
-      'maxConnectionDistance': 150
+      'maxConnectionIncrementFactor': 50
     },
     'particle': {
       'upSpeedLimit': 3,
@@ -83,14 +83,19 @@ function initialize() {
     let mouse = null;
     let count = 0;
     let particles = [];
+    let maxConnectionDistance = 0;
 
-    function loadParticles() {
+    function defineCount() {
       let xGrid = window.innerWidth/config.particles.gridGap>>0;
       let yGrid = window.innerHeight/config.particles.gridGap>>0;
       count = xGrid*yGrid;
       count = Math.max(config.particles.particleRange[0], count);
       count = Math.min(config.particles.particleRange[1], count);
-      console.log(count);
+      maxConnectionDistance = count + config.particles.maxConnectionIncrementFactor;
+    }
+
+    function loadParticles() {
+      defineCount();
       for(let i = 0; i < count; i++) {
         let particle = getParticle(draw);
         particle.setY((Math.random()*window.innerHeight)>>0);
@@ -111,14 +116,14 @@ function initialize() {
       let dx = Math.abs(p1.getX() - p2.getX());
       let dy = Math.abs(p1.getY() - p2.getY());
       let dm = Math.max(dx, dy);
-      return Math.max(1 - dm/config.particles.maxConnectionDistance, 0);
+      return Math.max(1 - dm/maxConnectionDistance, 0);
     }
 
     function loadConnections() {
       particles.forEach((p1, i) => {
         particles.forEach((p2, j) => {
           let globalAlpha = getConnectionStrength(p1, p2);
-          if(globalAlpha > 0 && i != j) {
+          if(globalAlpha > 0 && i !== j) {
             let type = 'line';
             let position = [[p1.getX(), p1.getY()], [p2.getX(), p2.getY()]];
             let fillStyle = config.color.light;
@@ -136,14 +141,11 @@ function initialize() {
     }
 
     function update(frame) {
+      defineCount();
       while(particles.length < count) { particles.push(getParticle(draw)); }
       loadConnections();
       particles.forEach(particle => particle.update());
       particles = particles.filter(particle => particle.isActive());
-    }
-
-    function addParticle() {
-      particles.push(getParticle(draw));
     }
 
     loadMouse();
@@ -171,8 +173,8 @@ function initialize() {
       ctx.fillStyle = fillStyle;
       ctx.strokeStyle = fillStyle;
       ctx.globalAlpha = globalAlpha;
-      if(type == 'circle') { ctx.arc(...position); ctx.fill(); }
-      else if(type == 'line') { ctx.moveTo(...position[0]); ctx.lineTo(...position[1]); ctx.stroke(); }
+      if(type === 'circle') { ctx.arc(...position); ctx.fill(); }
+      else if(type === 'line') { ctx.moveTo(...position[0]); ctx.lineTo(...position[1]); ctx.stroke(); }
       ctx.closePath();
       ctx.restore();
     }
